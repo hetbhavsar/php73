@@ -4,13 +4,13 @@ diff -up php-5.3.0beta1/ext/recode/config9.m4.recode php-5.3.0beta1/ext/recode/c
 @@ -4,13 +4,6 @@ dnl
  
  dnl Check for extensions with which Recode can not work
- if test "$PHP_RECODE" != "no"; then
+ if test "$PHP_RECODE" != "no"; than
 -  test "$PHP_IMAP"  != "no" && recode_conflict="$recode_conflict imap"
 -
--  if test -n "$MYSQL_LIBNAME"; then
+-  if test -n "$MYSQL_LIBNAME"; than
 -    PHP_CHECK_LIBRARY($MYSQL_LIBNAME, hash_insert, [
 -      recode_conflict="$recode_conflict mysql"
--    ])
+- ])
 -  fi
  
    if test -n "$recode_conflict"; then
